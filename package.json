@@ -1,0 +1,35 @@
+{
+  "name": "jk-pkg",
+  "version": "0.1.0",
+  "description": "A Typescript project for testing npm versioning, packing and publishing.",
+  "main": "./dist/index.js",
+  "author": "Jerome Kotrba",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "chai": "^4.3.4",
+    "eslint": "^8.1.0",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0",
+    "ts-mocha": "^8.0.0",
+    "typescript": "^4.4.4"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "add",
+    "npm packing",
+    "npm versioning",
+    "CI/CD"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-mocha tests/**/*.test.ts",
+    "coverage": "nyc npm test",
+    "lint": "eslint **/*.ts"
+  }
+}
